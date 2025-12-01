@@ -1,6 +1,7 @@
 Q. What is the use of the keyof keyword in TypeScript? Provide an example.
 
 Answer:
+
 In TypeScript, keyof is a type operator that returns a union of all property names (keys) of a given object type.
 If you give it an object type, it extracts all the keys and turns them into a type.
 keyof ensures that you can only access valid keys of the object, preventing runtime errors.
@@ -25,6 +26,7 @@ console.log getValue(personDetails, "email") error: Argument of type '"email"' i
 Q. Explain the difference between any, unknown, and never types in TypeScript.
 
 Answer:
+
 any:
 In TypeScript, any is a type that disables type checking. You can assign any value to it, and use it freely without errors.
 Example:
