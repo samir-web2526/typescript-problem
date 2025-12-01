@@ -37,20 +37,26 @@ any:
 
 In TypeScript, any is a type that disables type checking. You can assign any value to it, and use it freely without errors.
 
+
 Example:
 
 let a: any = 10;
+
 a = "Hello";      // valid
+
 a.toUpperCase();  // valid, no error
 
 unknown:
 
 In TypeScript, unknown is a safer version of any. You can assign any value to it, but you cannot use it without first checking its type.
 
+
 Example:
 
 let b: unknown = 10;
+
 b = "Hello";      // valid
+
 // b.toUpperCase();  //  Error: cannot use unknown without type check
 
 if (typeof b === "string") {
@@ -60,6 +66,7 @@ if (typeof b === "string") {
 never:
 
 In TypeScript, never represents values that never occur. It is used for functions that never return or for unreachable code.
+
 
 Example:
 
