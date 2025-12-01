@@ -31,11 +31,12 @@ console.log getValue(personDetails, "email") error: Argument of type '"email"' i
 
 
 
+
 Q. Explain the difference between any, unknown, and never types in TypeScript.
 
 Answer:
 
-any:
+any type:
 
 In TypeScript, any is a type that disables type checking. You can assign any value to it, and use it freely without errors.
 
@@ -48,7 +49,7 @@ a = "Hello";      // valid
 
 a.toUpperCase();  // valid, no error
 
-unknown:
+unknown type:
 
 In TypeScript, unknown is a safer version of any. You can assign any value to it, but you cannot use it without first checking its type.
 
@@ -66,7 +67,7 @@ if (typeof b === "string") {
   b.toUpperCase();  // valid after type check
 }
 
-never:
+never type:
 
 In TypeScript, never represents values that never occur. It is used for functions that never return or for unreachable code.
 
