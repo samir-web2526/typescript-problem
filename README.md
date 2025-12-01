@@ -5,6 +5,7 @@ Answer:
 In TypeScript, keyof is a type operator that returns a union of all property names (keys) of a given object type.
 If you give it an object type, it extracts all the keys and turns them into a type.
 keyof ensures that you can only access valid keys of the object, preventing runtime errors.
+
 Example:
 
 
@@ -60,6 +61,7 @@ b = "Hello";      // valid
 // b.toUpperCase();  //  Error: cannot use unknown without type check
 
 if (typeof b === "string") {
+
   b.toUpperCase();  // valid after type check
 }
 
