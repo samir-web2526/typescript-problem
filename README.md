@@ -30,6 +30,7 @@ console.log(getValue(personDetails, "age"));  // valid
 console.log getValue(personDetails, "email") error: Argument of type '"email"' is not assignable to parameter of type 'keyof Person'.
 
 
+
 Q. Explain the difference between any, unknown, and never types in TypeScript.
 
 Answer:
@@ -73,8 +74,11 @@ In TypeScript, never represents values that never occur. It is used for function
 Example:
 
 function throwError(message: string): never {
+
   throw new Error(message);
 }
+
 function infiniteLoop(): never {
+
   while (true) {}
 }
